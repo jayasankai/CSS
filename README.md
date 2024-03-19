@@ -223,3 +223,6 @@ Select first item of list of divs
     padding: 10px;
 }
 </pre>
+
+# Do not use <b>!important</b>
+
