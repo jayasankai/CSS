@@ -77,8 +77,6 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Com
 https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
 
 
-# display: block | inline | none
-
 # display: none vs visibility: hidden
 <pre>
 .box-1 {
@@ -109,12 +107,13 @@ _x
 </br>
 where _  simply is an empty spot and x  has the class box-2. The element is only invisible, it's not removed from the document flow and of course also not from the DOM.
 
-# Block-level elements 
+# display: block | inline | none
+## Block-level elements 
 are rendered as a block and hence take up all the available horizontal space. You can set margin-top and margin-bottom and two block-level elements will render in two different lines.
 
 Some examples are: &lt;div&gt; , &lt;section&gt; , &lt;article&gt; , &lt;nav&gt;  but also &lt;h1&gt; , &lt;h2&gt;  etc and &lt;p&gt;.
 
-# Inline elements 
+## Inline elements 
 on the other hand only take up the space they require to fit their content in. Hence two inline-elements will fit into the same line (as long as the combined content doesn't take up the entire space in which case a line break would be added).
 
 They also use the box-model you learned about but margin-top  and margin-bottom  have no effect on the element. padding-top  and padding-bottom  also have a different effect. They don't push the adjacent content away but they will do so with the element border. You can read more about that behavior in the following article: https://hacks.mozilla.org/2015/03/understanding-inline-box-model/
