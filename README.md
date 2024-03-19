@@ -247,3 +247,15 @@ Select first item of list of divs
 }
 </pre>
 
+# Add a drop shadow to item
+--css
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
+
+Note: 
+box-shadow: x-axis, y-axis, blurriness, spread
+rgba: red, green, blue with alpha channel
+
+# 
+
+
+
