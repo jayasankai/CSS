@@ -50,7 +50,7 @@ a.active {
 </pre>
 
 8. ID selector: Select by ID
-Note: Select item with specific id.
+Note: Select item with specific id. Not recomended as IDs have other usages
 <pre>
 --html
 &lt;nav&gt;
