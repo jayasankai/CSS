@@ -172,7 +172,7 @@ p::first-letter {
 # Image reference in CSS
 <pre>
 #product-overview {
-    background: url("freedom.jpg");
+    background: <b>url("freedom.jpg");</b>
     width: 100%;
     height: 528px;
     padding: 10px;
