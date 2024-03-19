@@ -66,8 +66,8 @@ a#link_1 {
 
 9. Selecting the opposite by Pseudo class :not()
 Note: Some browers may not support this features
-https://developer.mozilla.org/en-US/docs/Web/CSS/:not
-https://caniuse.com/
+https://developer.mozilla.org/en-US/docs/Web/CSS/:not</br>
+https://caniuse.com/</br>
 <pre>
 a.active {
     color: #521751;
@@ -115,10 +115,10 @@ div p {
 </pre>
 
 # Usefull links:
-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
-https://developer.mozilla.org/en-US/docs/Web/CSS
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators
-https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</br>
+https://developer.mozilla.org/en-US/docs/Web/CSS</br>
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators</br>
+https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity</br>
 
 # display: block | inline | none
 ## Block-level elements 
