@@ -64,6 +64,18 @@ a#link_1 {
 }
 </pre>
 
+9. Selecting the opposite by Pseudo class :not()
+Note: Some browers may not support this features
+<pre>
+a.active {
+    color: #521751;
+}
+
+a:not(.active) {
+    color: blue;
+}
+</pre>
+
 # CSS inherit
 <pre>
 #product-overview {
