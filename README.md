@@ -168,3 +168,13 @@ p::first-letter {
     &lt;a href="start-hosting/index.html"&gt;Start Hosting&lt;/a&gt;
 &lt;/li&gt;
 </pre>
+
+# Image reference in CSS
+<pre>
+#product-overview {
+    background: url("freedom.jpg");
+    width: 100%;
+    height: 528px;
+    padding: 10px;
+}
+</pre>
