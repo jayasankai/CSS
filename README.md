@@ -164,7 +164,7 @@ p::first-letter {
 }
 
 --html
-<li class="main-nav__item main-nav__item--cta">
-    <a href="start-hosting/index.html">Start Hosting</a>
-</li>
-</pre>
+&lt;li class="main-nav__item main-nav__item--cta" &gt;
+    &lt;a href="start-hosting/index.html"&gt;Start Hosting&lt;/a &gt;
+&lt;/li &gt;
+&lt;/pre &gt;
