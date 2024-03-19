@@ -139,6 +139,14 @@ p::first-letter {
 }
 </pre>
 
+Select first item of list of divs
+<pre>
+.main-header div:first-of-type {
+    /* display: none; */
+    visibility: hidden;
+}
+</pre>
+
 # Group rules
 <pre>
 .main-nav__item a:hover,
@@ -149,6 +157,13 @@ p::first-letter {
 
 # Changing a link to button
 <pre>
+.main-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
 .main-nav__item--cta a{
     color: white;
     background: #ff1b68;

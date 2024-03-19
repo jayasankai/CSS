@@ -1,0 +1,24 @@
+.main-header div {
+    display: inline-block;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 84px;
+    height: 24px;
+    border-radius: 8px;
+    background: #d95d10;
+    border: 3px solid #d95d10;
+    text-decoration: none;
+}
+
+.main-header div:hover,
+.main-header div:active {
+    color: #d95d10;
+    background: white;
+}
+
+.main-header div:first-of-type {
+    /* display: none; */
+    visibility: hidden;
+}
