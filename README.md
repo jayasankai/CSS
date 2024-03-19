@@ -34,6 +34,34 @@ h1 {
 }
 </pre>
 
+7. Class selector : Select by class name
+Note: Select all items having same class name. More reusable
+<pre>
+--html
+    &lt;nav&gt;
+        &lt;a href="#intro" class="active"&gt;Intro&lt;/a&gt;
+        &lt;a href="#outro" class="active"&gt;Outro&lt;/a&gt;
+    &lt;/nav&gt;
+
+a.active {
+    color: #521751;
+}
+</pre>
+
+8. ID selector: Select by ID
+Note: Select item with specific id.
+<pre>
+--html
+    &lt;nav&gt;
+        &lt;a href="#intro" id="link_1"&gt;Intro&lt;/a&gt;
+        &lt;a href="#outro" id="link_2"&gt;Outro&lt;/a&gt;
+    &lt;/nav&gt;
+
+a#link_1 {
+    color: #521751;
+}
+</pre>
+
 # CSS inherit
 <pre>
 #product-overview {
