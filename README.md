@@ -1,39 +1,53 @@
 # CSS Selectors
 1. Elements
+<pre>
 h1 {
     color: red;
 }
+</pre>
 
 2. Classes
+<pre>
 .class-name {
     color: red;
 }
+</pre>
 
 4. ID
+<pre>
 #element_id {
     color: red;
 }
+</pre>
 
 5. Attributes
+<pre>
 [disabled] {
     color: red;
 }
+</pre>
 
 6. Universal
+<pre>
 * {
     color: red;
 }
+</pre>
 
 # CSS inherit
+<pre>
 #product-overview {
     color: inherit;
 }
+</pre>
 
 # CSS combinator
 1. Adjacent Sibling : color the paragraph in RED in every &lt;p&gt; adjacent to &lt;h2&gt; tag.
+<pre>
 h2 + p {
     color: red;
 }
+</pre>
 
 2. General Sibling: color the paragraph in RED in every &lt;p&gt; in same level of &lt;h2&gt; tag.
 h2 ~ p {
@@ -111,4 +125,10 @@ Pseudo elements: defines specific part of an element
 p::first-letter {
     color: red;
     font-size: 20px;
+}
+
+# Group rules
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
 }
