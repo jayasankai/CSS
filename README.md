@@ -50,20 +50,25 @@ h2 + p {
 </pre>
 
 2. General Sibling: color the paragraph in RED in every &lt;p&gt; in same level of &lt;h2&gt; tag.
+<pre>
 h2 ~ p {
     color: red;
 }
+</pre>
 
 3. Child : color the paragraph in RED in every child &lt;p&gt; of &lt;div&gt;
+<pre>
 div &gt; p {
     color: red;
 }
+</pre>
 
 4. Descendent : color the paragraph in RED in every decendent &lt;p&gt; of &lt;div&gt;
+<pre>
 div p {
     color: red;
 }
-
+</pre>
 
 # Usefull links:
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
@@ -75,6 +80,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
 # display: block | inline | none
 
 # display: none vs visibility: hidden
+<pre>
 .box-1 {
     display: none;
 }
@@ -82,11 +88,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
 .box-2 {
     display: inline-block;
 }
-Will render:
+</pre>
+Will render: </br>
 x
+</br>
 where x  has the class box-2 . The first element just isn't displayed. It's still part of the DOM though, you can still access it via JavaScript for example.
 
 ----
+<pre>
 .box-1 {
     visibility: hidden;
 }
@@ -94,15 +103,16 @@ where x  has the class box-2 . The first element just isn't displayed. It's stil
 .box-2 {
     display: inline-block;
 }
-
-Will render:
+</pre>
+Will render:</br>
 _x
+</br>
 where _  simply is an empty spot and x  has the class box-2. The element is only invisible, it's not removed from the document flow and of course also not from the DOM.
 
 # Block-level elements 
 are rendered as a block and hence take up all the available horizontal space. You can set margin-top and margin-bottom and two block-level elements will render in two different lines.
 
-Some examples are: <div> , <section> , <article> , <nav>  but also <h1> , <h2>  etc and <p> .
+Some examples are: &lt;div&gt; , &lt;section&gt; , &lt;article&gt; , &lt;nav&gt;  but also &lt;h1&gt; , &lt;h2&gt;  etc and &lt;p&gt;.
 
 # Inline elements 
 on the other hand only take up the space they require to fit their content in. Hence two inline-elements will fit into the same line (as long as the combined content doesn't take up the entire space in which case a line break would be added).
@@ -113,22 +123,28 @@ Additionally, setting a width  or height  on an inline element also has no effec
 
 Logically, this makes sense since you don't want your inline elements to destroy your multi-line text-layout. If you want to do so or need both block-level and inline behavior, you can set display: inline-block  to merge behaviors.
 
-Some example elements are: <a> , <span> , <img> 
+Some example elements are: &lt;a&gt; , &lt;span&gt; , &lt;img&gt; 
 
 # Pseudo classes and Pseudo elements
 Pseudo classes : defins a special state of an element
+<pre>
 .main-nav__item a:hover {
     color: white;
 }
+</pre>
 
 Pseudo elements: defines specific part of an element
+<pre>
 p::first-letter {
     color: red;
     font-size: 20px;
 }
+</pre>
 
 # Group rules
+<pre>
 .main-nav__item a:hover,
 .main-nav__item a:active {
     color: white;
 }
+</pre>
