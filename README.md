@@ -239,4 +239,11 @@ Select first item of list of divs
 </pre>
 
 # Do not use <b>!important</b>
+<pre>
+.main-section {
+    height: 800px;
+    border: 1px solid #ccc !important;
+    padding: 16px;
+}
+</pre>
 
