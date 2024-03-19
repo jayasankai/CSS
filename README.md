@@ -101,3 +101,14 @@ Logically, this makes sense since you don't want your inline elements to destroy
 
 Some example elements are: <a> , <span> , <img> 
 
+# Pseudo classes and Pseudo elements
+Pseudo classes : defins a special state of an element
+.main-nav__item a:hover {
+    color: white;
+}
+
+Pseudo elements: defines specific part of an element
+p::first-letter {
+    color: red;
+    font-size: 20px;
+}
