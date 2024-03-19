@@ -66,6 +66,7 @@ a#link_1 {
 
 9. Selecting the opposite by Pseudo class :not()
 Note: Some browers may not support this features
+https://caniuse.com/
 <pre>
 a.active {
     color: #521751;
