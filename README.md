@@ -146,3 +146,25 @@ p::first-letter {
     color: white;
 }
 </pre>
+
+# Changing a link to button
+<pre>
+.main-nav__item--cta a{
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: #ff1b68;
+    background: white;
+    border-bottom: none
+}
+
+--html
+<li class="main-nav__item main-nav__item--cta">
+    <a href="start-hosting/index.html">Start Hosting</a>
+</li>
+</pre>
