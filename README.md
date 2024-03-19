@@ -38,11 +38,12 @@ h1 {
 Note: Select all items having same class name. More reusable
 <pre>
 --html
-    &lt;nav&gt;
-        &lt;a href="#intro" class="active"&gt;Intro&lt;/a&gt;
-        &lt;a href="#outro" class="active"&gt;Outro&lt;/a&gt;
-    &lt;/nav&gt;
+&lt;nav&gt;
+    &lt;a href="#intro" class="active"&gt;Intro&lt;/a&gt;
+    &lt;a href="#outro" class="active"&gt;Outro&lt;/a&gt;
+&lt;/nav&gt;
 
+--css
 a.active {
     color: #521751;
 }
@@ -52,11 +53,12 @@ a.active {
 Note: Select item with specific id.
 <pre>
 --html
-    &lt;nav&gt;
-        &lt;a href="#intro" id="link_1"&gt;Intro&lt;/a&gt;
-        &lt;a href="#outro" id="link_2"&gt;Outro&lt;/a&gt;
-    &lt;/nav&gt;
+&lt;nav&gt;
+    &lt;a href="#intro" id="link_1"&gt;Intro&lt;/a&gt;
+    &lt;a href="#outro" id="link_2"&gt;Outro&lt;/a&gt;
+&lt;/nav&gt;
 
+--css
 a#link_1 {
     color: #521751;
 }
