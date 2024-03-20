@@ -61,6 +61,10 @@ body {
 .plan__price {
     color: #858585;
 }
+ß
+.plan--highlighted .plan__title {
+    color: white;
+}
 
 .plan--highlighted .plan__price {
     color: #0e4f1f;
@@ -68,6 +72,23 @@ body {
 
 .plan__features li {
     margin: 8px 0;
+}
+
+.plan--button {
+    background: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.plan--button:hover,
+.plan--button:active {
+    background: white;
+    color: #0e4f1f;
 }
 
 /* h1 {
