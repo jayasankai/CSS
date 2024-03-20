@@ -37,7 +37,8 @@ h1 {
 </pre>
 
 7. Class selector : Select by class name
-Note: Select all items having same class name. More reusable
+Note: Select all items having same class name. More reusable</br>
+Ex01: by class specified</br>
 <pre>
 --html
 &lt;nav&gt;
@@ -48,6 +49,13 @@ Note: Select all items having same class name. More reusable
 --css
 a.active {
     color: #521751;
+}
+</pre>
+
+Ex02: parent_class and child class </br>
+<pre>
+.plan--highlighted .plan__price {
+    color: #0e4f1f;
 }
 </pre>
 
