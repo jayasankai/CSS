@@ -327,7 +327,6 @@ To fix that, you may need to add new empty DIV with class of clear_both.
 }
 </pre>
 To fix:
-<pre>
 --html
 <pre>
 &lt;section&gt; content1 &lt;/section&gt;
