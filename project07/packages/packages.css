@@ -33,12 +33,17 @@ main {
     background: white;
 }
 
+.clearfix {
+    clear: both;
+}
+
 #plus {
     background: rgba(213, 255, 220, 0.95);
 }
 
 #free {
     background: rgba(234, 252, 237, 0.95);
+    float: right;
 }
 
 #premium {

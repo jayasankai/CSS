@@ -317,4 +317,28 @@ Remove outline of the button
 }
 </pre>
 
+## float and clear_both
+Float will align an item to specified direction. However, that will mess the positioning of other elements.</br>
+To fix that, you may need to add new empty DIV with class of clear_both.
+<pre>
+.middle_section {
+    background: rgba(234, 252, 237, 0.95);
+    float: right;
+}
+</pre>
+To fix:
+<pre>
+--html
+<pre>
+&lt;section&gt; content1 &lt;/section&gt;
+&lt;section class="middle_section"&gt; content2 &lt;/section&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;section&gt; content3 &lt;/section&gt;
+</pre>
+<pre>
+.clearfix {
+    clear: both;
+}
+</pre>
+
 ## 
