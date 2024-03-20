@@ -252,10 +252,12 @@ Select first item of list of divs
 box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
 
 Note: 
-box-shadow: x-axis, y-axis, blurriness, spread
-rgba: red, green, blue with alpha channel
+    box-shadow: x-axis, y-axis, blurriness, spread
+    rgba: red, green, blue with alpha channel
 
-# 
+# border-radius : Rounded conders to box
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
+border-radius: 8px;
 
 
 
