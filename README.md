@@ -154,7 +154,7 @@ x
 </br>
 where x  has the class box-2 . The first element just isn't displayed. It's still part of the DOM though, you can still access it via JavaScript for example.
 
-----
+--
 <pre>
 .box-1 {
     visibility: hidden;
