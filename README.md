@@ -1,4 +1,6 @@
-# CSS Selectors
+# CSS: Cascading Style Sheets
+
+## CSS Selectors
 1. Elements
 <pre>
 h1 {
@@ -78,14 +80,14 @@ a:not(.active) {
 }
 </pre>
 
-# CSS inherit
+## CSS inherit
 <pre>
 #product-overview {
     color: inherit;
 }
 </pre>
 
-# CSS combinator
+## CSS combinator
 1. Adjacent Sibling : color the paragraph in RED in every &lt;p&gt; adjacent to &lt;h2&gt; tag.
 <pre>
 h2 + p {
@@ -114,19 +116,19 @@ div p {
 }
 </pre>
 
-# Usefull links:
+## Usefull links:
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</br>
 https://developer.mozilla.org/en-US/docs/Web/CSS</br>
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators</br>
 https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity</br>
 
-# display: block | inline | none
-## Block-level elements 
+## display: block | inline | none
+### Block-level elements 
 are rendered as a block and hence take up all the available horizontal space. You can set margin-top and margin-bottom and two block-level elements will render in two different lines.
 
 Some examples are: &lt;div&gt; , &lt;section&gt; , &lt;article&gt; , &lt;nav&gt;  but also &lt;h1&gt; , &lt;h2&gt;  etc and &lt;p&gt;.
 
-## Inline elements 
+### Inline elements 
 on the other hand only take up the space they require to fit their content in. Hence two inline-elements will fit into the same line (as long as the combined content doesn't take up the entire space in which case a line break would be added).
 
 They also use the box-model you learned about but margin-top  and margin-bottom  have no effect on the element. padding-top  and padding-bottom  also have a different effect. They don't push the adjacent content away but they will do so with the element border. You can read more about that behavior in the following article: https://hacks.mozilla.org/2015/03/understanding-inline-box-model/
@@ -137,7 +139,7 @@ Logically, this makes sense since you don't want your inline elements to destroy
 
 Some example elements are: &lt;a&gt; , &lt;span&gt; , &lt;img&gt; 
 
-## display: none vs visibility: hidden
+### display: none vs visibility: hidden
 <pre>
 .box-1 {
     display: none;
@@ -167,7 +169,7 @@ _x
 </br>
 where _  simply is an empty spot and x  has the class box-2. The element is only invisible, it's not removed from the document flow and of course also not from the DOM.
 
-# Pseudo classes and Pseudo elements
+## Pseudo classes and Pseudo elements
 Pseudo classes : defins a special state of an element
 <pre>
 .main-nav__item a:hover {
@@ -191,7 +193,7 @@ Select first item of list of divs
 }
 </pre>
 
-# Group rules
+## Group rules
 <pre>
 .main-nav__item a:hover,
 .main-nav__item a:active {
@@ -199,7 +201,7 @@ Select first item of list of divs
 }
 </pre>
 
-# Changing a link to button
+## Changing a link to button
 <pre>
 .main-nav__item a {
     text-decoration: none;
@@ -228,7 +230,7 @@ Select first item of list of divs
 &lt;/li&gt;
 </pre>
 
-# Image reference in CSS
+## Image reference in CSS
 <pre>
 #product-overview {
     background: <b>url("freedom.jpg");</b>
@@ -238,7 +240,7 @@ Select first item of list of divs
 }
 </pre>
 
-# Do not use <b>!important</b>
+## Do not use <b>!important</b>
 <pre>
 .main-section {
     height: 800px;
@@ -247,7 +249,7 @@ Select first item of list of divs
 }
 </pre>
 
-# Add a drop shadow to item
+## Add a drop shadow to item
 --css
 <pre>
 box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
@@ -257,12 +259,12 @@ Note: </br>
     box-shadow: x-axis, y-axis, blurriness, spread </br>
     rgba: red, green, blue with alpha channel</br>
 
-# border-radius : Rounded conders to box
+## border-radius : Rounded conders to box
 <pre>
 box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
 border-radius: 8px;
 </pre>
 
-# 
+## 
 
 
