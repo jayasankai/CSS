@@ -297,3 +297,10 @@ list-style: none;
     color: #0e4f1f;
 }
 </pre>
+
+Remove outline of the button
+<pre>
+.plan--button:focus {
+    outline: none;
+}
+</pre>
