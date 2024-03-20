@@ -317,7 +317,7 @@ Remove outline of the button
 }
 </pre>
 
-## float and clear_both
+## float and clear_both : not recomend to use often
 Float will align an item to specified direction. However, that will mess the positioning of other elements.</br>
 To fix that, you may need to add new empty DIV with class of clear_both.
 <pre>
