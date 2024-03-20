@@ -319,7 +319,8 @@ Remove outline of the button
 
 ## float and clear_both : not recomend to use often
 Float will align an item to specified direction. However, that will mess the positioning of other elements.</br>
-To fix that, you may need to add new empty DIV with class of clear_both.
+To fix that, you may need to add new empty DIV with class of clear_both.</br>
+link : https://developer.mozilla.org/en-US/docs/Web/CSS/float 
 <pre>
 .middle_section {
     background: rgba(234, 252, 237, 0.95);
