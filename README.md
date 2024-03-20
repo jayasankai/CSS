@@ -304,3 +304,17 @@ Remove outline of the button
     outline: none;
 }
 </pre>
+
+## Adding a circled div : border-radius: 50% and margin: auto
+<pre>
+.key-feature__image {
+    background-color: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: auto;
+}
+</pre>
+
+## 
