@@ -249,15 +249,20 @@ Select first item of list of divs
 
 # Add a drop shadow to item
 --css
+<pre>
 box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
+</pre>
 
-Note: 
-    box-shadow: x-axis, y-axis, blurriness, spread
-    rgba: red, green, blue with alpha channel
+Note: </br>
+    box-shadow: x-axis, y-axis, blurriness, spread </br>
+    rgba: red, green, blue with alpha channel</br>
 
 # border-radius : Rounded conders to box
+<pre>
 box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
 border-radius: 8px;
+</pre>
 
+# 
 
 
