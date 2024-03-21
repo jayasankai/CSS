@@ -2,83 +2,82 @@
 
 ## CSS Selectors
 1. Elements
-<pre>
+```css
 h1 {
     color: red;
 }
-</pre>
+```
 
 2. Classes
-<pre>
+```css
 .class-name {
     color: red;
 }
-</pre>
+```
 
 4. ID
-<pre>
+```css
 #element_id {
     color: red;
 }
-</pre>
+```
 
 5. Attributes
-<pre>
+```css
 [disabled] {
     color: red;
 }
-</pre>
+```
 
 6. Universal
-<pre>
+```css
 * {
     color: red;
 }
-</pre>
+```
 
 7. Class selector : Select by class name
 Note: Select all items having same class name. More reusable</br>
 Ex01: by class specified</br>
-<pre>
---html
-&lt;nav&gt;
-    &lt;a href="#intro" class="active"&gt;Intro&lt;/a&gt;
-    &lt;a href="#outro" class="active"&gt;Outro&lt;/a&gt;
-&lt;/nav&gt;
-
---css
+```html
+<nav>
+    <a href="#intro" class="active">Intro</a>
+    <a href="#outro" class="active">Outro</a>
+</nav>
+```
+```css
 a.active {
     color: #521751;
 }
-</pre>
+```
 
 Ex02: parent_class and child class </br>
-<pre>
+```css
 .plan--highlighted .plan__price {
     color: #0e4f1f;
 }
-</pre>
+```
 
 8. ID selector: Select by ID
 Note: Select item with specific id. Not recomended as IDs have other usages
-<pre>
---html
-&lt;nav&gt;
-    &lt;a href="#intro" id="link_1"&gt;Intro&lt;/a&gt;
-    &lt;a href="#outro" id="link_2"&gt;Outro&lt;/a&gt;
-&lt;/nav&gt;
 
---css
+```html
+<nav>
+    <a href="#intro" id="link_1">Intro</a>
+    <a href="#outro" id="link_2">Outro</a>
+</nav>
+```
+```css
 a#link_1 {
     color: #521751;
 }
-</pre>
+```
 
 9. Selecting the opposite by Pseudo class :not()
 Note: Some browers may not support this features
 https://developer.mozilla.org/en-US/docs/Web/CSS/:not</br>
 https://caniuse.com/</br>
-<pre>
+```css
 a.active {
     color: #521751;
 }
@@ -86,43 +85,43 @@ a.active {
 a:not(.active) {
     color: blue;
 }
-</pre>
+```
 
 ## CSS inherit
-<pre>
+```css
 #product-overview {
     color: inherit;
 }
-</pre>
+```
 
 ## CSS combinator
 1. Adjacent Sibling : color the paragraph in RED in every &lt;p&gt; adjacent to &lt;h2&gt; tag.
-<pre>
+```css
 h2 + p {
     color: red;
 }
-</pre>
+```
 
 2. General Sibling: color the paragraph in RED in every &lt;p&gt; in same level of &lt;h2&gt; tag.
-<pre>
+```css
 h2 ~ p {
     color: red;
 }
-</pre>
+```
 
 3. Child : color the paragraph in RED in every child &lt;p&gt; of &lt;div&gt;
-<pre>
+```css
 div &gt; p {
     color: red;
 }
-</pre>
+```
 
 4. Descendent : color the paragraph in RED in every decendent &lt;p&gt; of &lt;div&gt;
-<pre>
+```css
 div p {
     color: red;
 }
-</pre>
+```
 
 ## Usefull links:
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</br>
@@ -148,7 +147,7 @@ Logically, this makes sense since you don't want your inline elements to destroy
 Some example elements are: &lt;a&gt; , &lt;span&gt; , &lt;img&gt; 
 
 ### display: none vs visibility: hidden
-<pre>
+```css
 .box-1 {
     display: none;
 }
@@ -156,14 +155,14 @@ Some example elements are: &lt;a&gt; , &lt;span&gt; , &lt;img&gt;
 .box-2 {
     display: inline-block;
 }
-</pre>
+```
 Will render: </br>
 x
 </br>
 where x  has the class box-2 . The first element just isn't displayed. It's still part of the DOM though, you can still access it via JavaScript for example.
 
 --
-<pre>
+```css
 .box-1 {
     visibility: hidden;
 }
@@ -171,7 +170,7 @@ where x  has the class box-2 . The first element just isn't displayed. It's stil
 .box-2 {
     display: inline-block;
 }
-</pre>
+```
 Will render:</br>
 _x
 </br>
@@ -179,38 +178,38 @@ where _  simply is an empty spot and x  has the class box-2. The element is only
 
 ## Pseudo classes and Pseudo elements
 Pseudo classes : defins a special state of an element
-<pre>
+```css
 .main-nav__item a:hover {
     color: white;
 }
-</pre>
+```
 
 Pseudo elements: defines specific part of an element
-<pre>
+```css
 p::first-letter {
     color: red;
     font-size: 20px;
 }
-</pre>
+```
 
 Select first item of list of divs
-<pre>
+```css
 .main-header div:first-of-type {
     /* display: none; */
     visibility: hidden;
 }
-</pre>
+```
 
 ## Group rules
-<pre>
+```css
 .main-nav__item a:hover,
 .main-nav__item a:active {
     color: white;
 }
-</pre>
+```
 
 ## Changing a link to button
-<pre>
+```css
 .main-nav__item a {
     text-decoration: none;
     color: #0e4f1f;
@@ -231,55 +230,55 @@ Select first item of list of divs
     background: white;
     border-bottom: none
 }
+```
 
---html
-&lt;li class="main-nav__item main-nav__item--cta"&gt;
-    &lt;a href="start-hosting/index.html"&gt;Start Hosting&lt;/a&gt;
-&lt;/li&gt;
-</pre>
+```html
+<li class="main-nav__item main-nav__item--cta">
+    <a href="start-hosting/index.html">Start Hosting</a>
+</li>
+```
 
 ## Image reference in CSS
-<pre>
+```css
 #product-overview {
     background: <b>url("freedom.jpg");</b>
     width: 100%;
     height: 528px;
     padding: 10px;
 }
-</pre>
+```
 
 ## Do not use <b>!important</b>
-<pre>
+```css
 .main-section {
     height: 800px;
     border: 1px solid #ccc !important;
     padding: 16px;
 }
-</pre>
+```
 
 ## Add a drop shadow to item
---css
-<pre>
+```css
 box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
-</pre>
+```
 
 Note: </br>
     box-shadow: x-axis, y-axis, blurriness, spread </br>
     rgba: red, green, blue with alpha channel</br>
 
 ## border-radius : Rounded conders to box
-<pre>
+```css
 box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
 border-radius: 8px;
-</pre>
+```
 
 ## Remove list Style
-<pre>
+```css
 list-style: none;
-</pre>
+```
 
 ## Improving action button
-<pre>
+```css
 .plan--button {
     background: #0e4f1f;
     color: white;
@@ -296,17 +295,17 @@ list-style: none;
     background: white;
     color: #0e4f1f;
 }
-</pre>
+```
 
 Remove outline of the button
-<pre>
+```css
 .plan--button:focus {
     outline: none;
 }
-</pre>
+```
 
 ## Adding a circled div : border-radius: 50% and margin: auto
-<pre>
+```css
 .key-feature__image {
     background-color: #ffcede;
     width: 128px;
@@ -315,39 +314,38 @@ Remove outline of the button
     border-radius: 50%;
     margin: auto;
 }
-</pre>
+```
 
 ## float and clear_both : not recomend to use often
 Float will align an item to specified direction. However, that will mess the positioning of other elements.</br>
 To fix that, you may need to add new empty DIV with class of clear_both.</br>
 link : https://developer.mozilla.org/en-US/docs/Web/CSS/float 
-<pre>
+```css
 .middle_section {
     background: rgba(234, 252, 237, 0.95);
     float: right;
 }
-</pre>
+```
 To fix:
---html
-<pre>
-&lt;section&gt; content1 &lt;/section&gt;
-&lt;section class="middle_section"&gt; content2 &lt;/section&gt;
-&lt;div class="clearfix"&gt;&lt;/div&gt;
-&lt;section&gt; content3 &lt;/section&gt;
-</pre>
-<pre>
+```html
+<section> content1 </section>
+<section class="middle_section"> content2 </section>
+<div class="clearfix"></div>
+<section> content3 </section>
+```
+```css
 .clearfix {
     clear: both;
 }
-</pre>
+```
 
 ## Element position and moving around the 'view port'
 ```html
-        <div class="parent">
-            <div class="child-1">Navigation Bar</div>
-            <div class="child-2">Background Image</div>
-            <div class="child-3">Features</div>
-        </div>
+<div class="parent">
+    <div class="child-1">Navigation Bar</div>
+    <div class="child-2">Background Image</div>
+    <div class="child-3">Features</div>
+</div>
 ```
 ```css
 .parent .child-1 {
