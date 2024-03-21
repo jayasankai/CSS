@@ -458,4 +458,8 @@ The above CSS rule would position the element with id one relatively until the v
 > [!NOTE]
 > You must specify a threshold with at least one of top, right, bottom, or left for sticky positioning to behave as expected. Otherwise, it will be indistinguishable from relative positioning.
 
-##
+### Z index and Stacking
+ref : https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context
+
+
+## 
