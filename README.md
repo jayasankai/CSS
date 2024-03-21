@@ -339,7 +339,7 @@ To fix:
 }
 ```
 
-## Element position and moving around the 'view port'
+## Navigation bar : Element position and moving around the 'view port'
 ```html
 <div class="parent">
     <div class="child-1">Navigation Bar</div>
