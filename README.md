@@ -78,7 +78,7 @@ a#link_1 {
 
 9. Selecting the opposite by Pseudo class :not()
 > [!NOTE]
-> Some browers may not support this features
+> Some browers may not support this features </br>
 > https://developer.mozilla.org/en-US/docs/Web/CSS/:not
 > https://caniuse.com/
 
@@ -402,13 +402,19 @@ Notice the fixed element in the lower-right corner of the page.
 }
 ```
 
-### position-absolute and position-relative:
-is positioned relative to the **nearest positioned ancestor** (instead of positioned relative to the viewport, like fixed).
+### position-relative:
+The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. </br>
+The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.
 
-However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+### position-absolute:
+Elements that are relatively positioned remain in the normal flow of the document. </br>
+In contrast, an element that is absolutely positioned is taken out of the flow; thus, other elements are positioned as if it did not exist. </br>
+The absolutely positioned element is positioned relative to its nearest positioned ancestor (i.e., the nearest ancestor that is not static). </br>
+If a positioned ancestor doesn't exist, it is positioned relative to the ICB (initial containing block), which is the containing block of the document's root element.
 
 > [!NOTE]
 > Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
 ```html
 <section class="package" id="plus">
     <h1 class="package__title">Our PLUS Plan</h1>
