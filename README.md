@@ -37,7 +37,9 @@ h1 {
 ```
 
 7. Class selector : Select by class name
-Note: Select all items having same class name. More reusable</br>
+> [!NOTE]
+> Select all items having same class name. More reusable
+
 Ex01: by class specified</br>
 ```html
 <nav>
@@ -59,7 +61,8 @@ Ex02: parent_class and child class </br>
 ```
 
 8. ID selector: Select by ID
-Note: Select item with specific id. Not recomended as IDs have other usages
+> [!NOTE]
+> Select item with specific id. Not recomended as IDs have other usages
 
 ```html
 <nav>
@@ -74,9 +77,11 @@ a#link_1 {
 ```
 
 9. Selecting the opposite by Pseudo class :not()
-Note: Some browers may not support this features
-https://developer.mozilla.org/en-US/docs/Web/CSS/:not</br>
-https://caniuse.com/</br>
+> [!NOTE]
+> Some browers may not support this features
+> https://developer.mozilla.org/en-US/docs/Web/CSS/:not
+> https://caniuse.com/
+
 ```css
 a.active {
     color: #521751;
@@ -262,9 +267,9 @@ Select first item of list of divs
 box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
 ```
 
-Note: </br>
-    box-shadow: x-axis, y-axis, blurriness, spread </br>
-    rgba: red, green, blue with alpha channel</br>
+> [!NOTE]
+> box-shadow: x-axis, y-axis, blurriness, spread
+> rgba: red, green, blue with alpha channel
 
 ## border-radius : Rounded conders to box
 ```css
@@ -317,9 +322,11 @@ Remove outline of the button
 ```
 
 ## float and clear_both : not recomend to use often
-Float will align an item to specified direction. However, that will mess the positioning of other elements.</br>
-To fix that, you may need to add new empty DIV with class of clear_both.</br>
-link : https://developer.mozilla.org/en-US/docs/Web/CSS/float 
+> [!NOTE]
+> Float will align an item to specified direction. However, that will mess the positioning of other elements.
+> To fix that, you may need to add new empty DIV with class of clear_both.
+> link : https://developer.mozilla.org/en-US/docs/Web/CSS/float 
+
 ```css
 .middle_section {
     background: rgba(234, 252, 237, 0.95);
@@ -358,7 +365,25 @@ To fix:
 }
 ```
 
-## Z-Index : to possition items in z axis
+## Positioning elements
+There are five different position values:
+
+1. static
+2. relative
+3. fixed
+4. absolute
+5. sticky - some browers not supoort
+
+> [!NOTE]
+> Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+### position-fixed and Z-Index to possition items relative to view port.
+is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+
+Notice the fixed element in the lower-right corner of the page.
+
 ```html
 <body>
     <div class="background"></div>
@@ -377,4 +402,39 @@ To fix:
 }
 ```
 
-## 
+### position-absolute and position-relative:
+is positioned relative to the **nearest positioned ancestor** (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+> [!NOTE]
+> Absolute positioned elements are removed from the normal flow, and can overlap elements.
+```html
+<section class="package" id="plus">
+    <h1 class="package__title">Our PLUS Plan</h1>
+    <h2 class="package__badge">RECOMENDED</h2>
+    <h2 class="package__subtitle">The most popular choice of our customers.</h2>
+</section>
+```
+
+```css
+.package {
+    width: 80%;
+    margin: 16px 0;
+    border: 4px solid #0e4f1f;
+    border-left: none;
+    position: relative;
+}
+.package__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 12px;
+    color: white;
+    background: #ff5454;
+    padding: 8px;
+}
+```
+
+### 
