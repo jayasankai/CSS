@@ -341,4 +341,16 @@ To fix:
 }
 </pre>
 
+## Element position and moving around the 'view port'
+<pre> 
+.parent .child-1 {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+</pre>
+
 ## 
