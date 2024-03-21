@@ -443,4 +443,19 @@ If a positioned ancestor doesn't exist, it is positioned relative to the ICB (in
 }
 ```
 
-### 
+### position-sticky:
+Sticky positioning can be thought of as a hybrid of relative and fixed positioning when its nearest scrolling ancestor is the viewport. A stickily positioned element is treated as relatively positioned until it crosses a specified threshold, at which point it is treated as fixed until it reaches the boundary of its parent. For example:
+
+```CSS
+#one {
+  position: sticky;
+  top: 10px;
+}
+```
+
+The above CSS rule would position the element with id one relatively until the viewport was scrolled such that the element would be less than 10 pixels from the top. Beyond that threshold, the element would be fixed to 10 pixels from the top.
+
+> [!NOTE]
+> You must specify a threshold with at least one of top, right, bottom, or left for sticky positioning to behave as expected. Otherwise, it will be indistinguishable from relative positioning.
+
+##
