@@ -358,4 +358,23 @@ To fix:
 }
 ```
 
+## Z-Index : to possition items in z axis
+```html
+<body>
+    <div class="background"></div>
+    <header class="main-header">
+        <div>Test</div>
+    </header>
+</body>
+```
+```css
+.background {
+    background: url("../images/plans-background.jpg");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+```
+
 ## 
