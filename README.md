@@ -449,7 +449,7 @@ Sticky positioning can be thought of as a hybrid of relative and fixed positioni
 ```CSS
 #one {
   position: sticky;
-  top: 10px;
+  top: 10px; <-- distance to view port from the element
 }
 ```
 
