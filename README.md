@@ -342,7 +342,14 @@ To fix:
 </pre>
 
 ## Element position and moving around the 'view port'
-<pre> 
+```html
+        <div class="parent">
+            <div class="child-1">Navigation Bar</div>
+            <div class="child-2">Background Image</div>
+            <div class="child-3">Features</div>
+        </div>
+```
+```css
 .parent .child-1 {
     position: fixed;
     width: 100%;
@@ -351,6 +358,6 @@ To fix:
     margin: 0;
     box-sizing: border-box;
 }
-</pre>
+```
 
 ## 
