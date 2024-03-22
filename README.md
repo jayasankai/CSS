@@ -598,3 +598,29 @@ background-image: linear-gradient(30deg, red 33%, blue 10%, transparent);
 ```css
 background-image: radial-gradient(circle 1000px at top left, red, blue 70%, transparent);
 ```
+
+### Stacking images
+```css
+#product-overview {
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), 
+        url("./images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box padding-box, 
+        red;
+/*  background: url("./images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box padding-box; */
+/*  background-image: url("./images/freedom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 10% bottom 20%;
+    background-origin: border-box;
+    background-clip: border-box; */
+/*  background-image: linear-gradient(30deg, red 33%, blue 10%, transparent); */
+/*  background-image: radial-gradient(circle 1000px at top left, red, blue 70%, transparent); */
+    width: 100%;
+    height: 528px;
+    padding: 10px;
+    margin-top: 43px;
+    position: relative;
+/*  border: 5px dashed red; */
+}
+```
+
+
