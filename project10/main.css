@@ -1,8 +1,8 @@
 
 
 #product-overview {
-    background: url("freedom.jpg") left 10% bottom 20%/cover no-repeat border-box padding-box;
-/*  background-image: url("freedom.jpg");
+    background: url("./images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box padding-box;
+/*  background-image: url("./images/freedom.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left 10% bottom 20%;
