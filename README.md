@@ -621,4 +621,43 @@ background-image: radial-gradient(circle 1000px at top left, red, blue 70%, tran
 /*  border: 5px dashed red; */
 ```
 
+## Filters
+The filter CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
+
+> [!NOTE]
+> Some browers not may not support fully
+
+```css
+/* <filter-function> values */
+filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(200%);
+filter: drop-shadow(16px 16px 20px blue);
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%);
+filter: sepia(60%);
+
+/* URL */
+filter: url("filters.svg#filter-id");
+
+/* Multiple filters */
+filter: contrast(175%) brightness(3%);
+filter: drop-shadow(3px 3px red) sepia(100%) drop-shadow(-3px -3px blue);
+
+/* Use no filter */
+filter: none;
+
+/* Global values */
+filter: inherit;
+filter: initial;
+filter: revert;
+filter: revert-layer;
+filter: unset;
+```
+
+
+
 
