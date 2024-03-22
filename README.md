@@ -588,4 +588,13 @@ excess part crop from left by x%, right by 100-x% and top by y%, bottom by 100-y
     background-clip: padding-box; */
 ```
 
-### 
+### Gradiant
+#### linear-gradient function
+```css
+background-image: linear-gradient(30deg, red 33%, blue 10%, transparent);
+```
+
+#### radial-gradient function
+```css
+background-image: radial-gradient(circle 1000px at top left, red, blue 70%, transparent);
+```
