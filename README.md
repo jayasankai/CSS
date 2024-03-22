@@ -601,7 +601,6 @@ background-image: radial-gradient(circle 1000px at top left, red, blue 70%, tran
 
 ### Stacking images
 ```css
-#product-overview {
     background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), 
         url("./images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box padding-box, 
         red;
@@ -620,7 +619,6 @@ background-image: radial-gradient(circle 1000px at top left, red, blue 70%, tran
     margin-top: 43px;
     position: relative;
 /*  border: 5px dashed red; */
-}
 ```
 
 
