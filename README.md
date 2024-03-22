@@ -462,4 +462,63 @@ The above CSS rule would position the element with id one relatively until the v
 ref : https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context
 
 
-## 
+## Image background and positioning
+1. repeat image of 100px width
+```css 
+    /* background: url("freedom.jpg"); */
+    background-image: url("freedom.jpg");
+    background-size: 100px;
+```
+2. to keep the size (width) and no repeat
+```css
+    background-image: url("freedom.jpg");
+    background-size: 100px;
+    background-repeat: no-repeat;
+```
+
+3. to repeat in x axis or y axis
+```css
+    background-image: url("freedom.jpg");
+    background-size: 100px;
+    background-repeat: repeat-x;
+```
+```css
+    background-image: url("freedom.jpg");
+    background-size: 100px;
+    background-repeat: repeat-y;
+```
+
+4. No repeat with corrrect width and height : image will not keep the default aspect ratio
+```css
+    background-image: url("freedom.jpg");
+    background-size: 300px 100px;
+    background-repeat: no-repeat;
+```
+
+5. No repeat with corrrect width and height in precentage value 
+```css
+    background-image: url("freedom.jpg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+```
+
+6. No repeat with corrrect width and height in precentage value and auto : may not occupy the full container
+```css
+    background-image: url("freedom.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+```
+
+7. cover the container by image : may crop the image, resized image by auto wrt container
+```css
+    background-image: url("freedom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+```
+
+7. contains: make sure full image fit in to the container
+```css
+    background-image: url("freedom.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+```
