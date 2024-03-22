@@ -463,6 +463,7 @@ ref : https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Und
 
 
 ## Image background and positioning
+### Image background
 1. repeat image of 100px width
 ```css 
     /* background: url("freedom.jpg"); */
@@ -522,3 +523,47 @@ ref : https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Und
     background-size: contain;
     background-repeat: no-repeat;
 ```
+
+### Image positioning
+1. background-position: Xpx Ypx; where X and Y value | from left and top
+```css
+    background-image: url("freedom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+```
+
+2. background-position: X% Y%; where X and Y value | </br>
+excess part crop from left by x%, right by 100-x% and top by y%, bottom by 100-y% | default 50% 50%
+```css
+    background-image: url("freedom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+```
+
+3. background-position: center; | center the image | similar to 50% 50%
+```css
+    background-image: url("freedom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+```
+
+4. background-position: left top; | align image to left and top | similar to 0% 0%
+```css
+    background-image: url("freedom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+```
+
+5. background-position: left x% bottom y%; | crop image from left and bottom by the x% and y% respectively
+```css
+    background-image: url("freedom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 10% bottom 20%;
+```
+
+## 
