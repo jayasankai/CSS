@@ -566,4 +566,24 @@ excess part crop from left by x%, right by 100-x% and top by y%, bottom by 100-y
     background-position: left 10% bottom 20%;
 ```
 
-## 
+### background-origin and background-clip
+1. background-origin and background-clip | define the container
+```css
+    background-image: url("freedom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 10% bottom 20%;
+    background-origin: border-box;
+    background-clip: border-box;
+```
+
+### All in one line
+```css
+    background: url("freedom.jpg") left 10% bottom 20%/cover no-repeat border-box padding-box;
+/*  background-image: url("freedom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 10% bottom 20%;
+    background-origin: border-box;
+    background-clip: padding-box; */
+```
